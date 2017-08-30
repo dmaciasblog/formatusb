@@ -9,9 +9,9 @@
 
 ### FUNCION COMPROBAR DISCOS
 function comprobar() {
-    if [[ $(lsblk -d -o HOTPLUG /dev/$disp | grep -w 1) -ne 1 ]]; then
-        echo
-        echo -e "\tLA UNIDAD $disp NO ES USB"
+    if [[ $(lsblk -d -o HOTPLUG /dev/$disp | grep -w 1) -ne 1 ]]; then  #listamos los dispositivos
+        echo                                                            #y descartamos los que sean
+        echo -e "\tLA UNIDAD $disp NO ES USB"                           #HOTPLUG 0
         echo
         tecla
         basica
