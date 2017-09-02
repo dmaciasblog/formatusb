@@ -147,6 +147,7 @@ function avanzada() {
     detectar
     echo -e -n "Seleciona dispositivo (p.e. sdb, sdc, sdd, etc...): "
     read dispo
+    comprobar
     filtro=$(grep -c $dispo /tmp/partition.txt)
     if [[ $filtro = "1" ]]; then
         sudo cfdisk /dev/$dispo
