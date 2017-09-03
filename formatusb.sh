@@ -55,7 +55,7 @@ function basica() {
     read disp
     echo
     comprobar
-    echo -n -e "\tSeleccione pasticion (1, 2, 3, etc...): "
+    echo -n -e "\tSeleccione particion (1, 2, 3, etc...): "
     read part
     echo
     formato
@@ -165,9 +165,12 @@ function menu_principal() {
     clear
     echo
     echo
-    echo -e "\t+----------------+"
-    echo -e "\t|   FORMAT USB   |"
-    echo -e "\t+----------------+"
+    echo -e "\t+-----------------------+"
+    echo -e "\t|      FORMAT  USB      |"
+    echo -e "\t|=======================|"
+    echo -e "\t|  www.dmaciasblog.com  |"
+    echo -e "\t| diego@dmaciasblog.com |"
+    echo -e "\t+-----------------------+"
     echo
     echo
     echo -e "\t\t1.\tModo basico"
